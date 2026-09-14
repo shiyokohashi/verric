@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Instrument_Sans } from "next/font/google";
+import { Instrument_Sans, Newsreader } from "next/font/google";
 import "./globals.css";
 
-/** Lausanne-adjacent neo-grotesque — single family sitewide. */
 const sans = Instrument_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -11,12 +10,20 @@ const sans = Instrument_Sans({
   display: "swap",
 });
 
+const serif = Newsreader({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Verric | The AI Deal Terminal for Private-Market Investors",
+  title: "Verric | Deal Intelligence for Private Markets",
   description:
-    "Verric is the deal terminal for private equity firms and independent sponsors: source-backed screening against your mandate, diligence structured into owned workstreams, and a firm analyst that carries your investment criteria across every opportunity. Under NDA.",
+    "Verric is the AI deal terminal for private equity and independent sponsors — source-backed screening against your mandate, diligence structured into owned workstreams, and institutional memory that survives every deal.",
   openGraph: {
-    title: "Verric | The AI Deal Terminal for Private-Market Investors",
+    title: "Verric | Deal Intelligence for Private Markets",
     description:
       "Screen, structure, and underwrite every opportunity from one place — with an analyst that carries your investment criteria.",
     url: "https://verric.io",
@@ -27,7 +34,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={sans.variable}>
+    <html lang="en" className={`${sans.variable} ${serif.variable}`}>
       <body className={sans.className}>{children}</body>
     </html>
   );

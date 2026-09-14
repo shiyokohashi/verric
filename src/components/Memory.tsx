@@ -1,6 +1,6 @@
 export function Memory() {
   return (
-    <section id="memory" className="section band-charcoal memory">
+    <section id="memory" className="section memory">
       <div className="container memory-layout">
         <div className="memory-copy">
           <p className="eyebrow">Institutional memory</p>
@@ -15,10 +15,10 @@ export function Memory() {
           </p>
         </div>
 
-        <div className="memory-panel">
+        <div className="panel">
           <div className="memory-panel-head">
             <p className="label">Decision record · Project Hearth</p>
-            <span className="tag memory-tag">Pass (draft)</span>
+            <span className="tag danger">Pass (draft)</span>
           </div>
 
           <div className="memory-verdict">

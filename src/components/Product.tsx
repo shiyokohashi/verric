@@ -1,15 +1,15 @@
 export function Product() {
   return (
-    <section id="product" className="section band-cream product">
+    <section id="product" className="section product-band">
       <span id="how-it-works" className="anchor" aria-hidden="true" />
       <div className="container">
         <div className="section-head center">
+          <p className="eyebrow">Product</p>
           <h2>What you do inside the Terminal.</h2>
           <p>
-            Built around how investment teams actually decide.
-            <br />
-            Most tools help with a task — Verric holds the acquisition from
-            first look through the final call.
+            Built around how investment teams actually decide. Most tools help
+            with a task — Verric holds the acquisition from first look through
+            the final call.
           </p>
         </div>
 
@@ -50,25 +50,29 @@ export function Product() {
               </p>
             </div>
             <div className="panel workflow-panel">
-              <p className="label">Screen · Project Hearth</p>
-              <ul className="mini-list">
-                <li>
-                  <span>Mandate fit</span>
-                  <span className="score">Consumer · in band</span>
-                </li>
-                <li>
-                  <span>Verified earnings bridge</span>
-                  <span className="score">Source-linked</span>
-                </li>
-                <li>
-                  <span>Customer concentration</span>
-                  <span className="tag red">57% · outside rule</span>
-                </li>
-                <li>
-                  <span>Recommendation</span>
-                  <span className="score">Pass (draft)</span>
-                </li>
-              </ul>
+              <div className="panel-meta">
+                <p className="label">Screen · Project Hearth</p>
+              </div>
+              <div className="workflow-panel-inner">
+                <ul className="mini-list">
+                  <li>
+                    <span>Mandate fit</span>
+                    <span className="score">Consumer · in band</span>
+                  </li>
+                  <li>
+                    <span>Verified earnings bridge</span>
+                    <span className="score">Source-linked</span>
+                  </li>
+                  <li>
+                    <span>Customer concentration</span>
+                    <span className="tag danger">57% · outside rule</span>
+                  </li>
+                  <li>
+                    <span>Recommendation</span>
+                    <span className="score">Pass (draft)</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </article>
 
@@ -101,7 +105,7 @@ export function Product() {
                   <div className="bar">
                     <span className="bar-blocked" style={{ width: "33%" }} />
                   </div>
-                  <span className="tag red">blocked</span>
+                  <span className="tag danger">blocked</span>
                 </li>
                 <li>
                   <span>Customers</span>
@@ -132,7 +136,9 @@ export function Product() {
               </p>
             </div>
             <div className="panel workflow-panel">
-              <p className="label">Decision record</p>
+              <div className="panel-meta">
+                <p className="label">Decision record</p>
+              </div>
               <div className="decide-callout">
                 <p className="label signal">Pass · drafted</p>
                 <p>
@@ -142,11 +148,11 @@ export function Product() {
               </div>
               <ul className="rules-list">
                 <li>
-                  <span className="tag red">Hard</span>
+                  <span className="tag danger">Hard</span>
                   <span>No customer above 35% of revenue</span>
                 </li>
                 <li>
-                  <span className="tag standing">Applied</span>
+                  <span className="tag ok">Applied</span>
                   <span>Preserved for institutional memory</span>
                 </li>
               </ul>

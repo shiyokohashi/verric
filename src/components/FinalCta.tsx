@@ -1,6 +1,6 @@
 export function FinalCta() {
   return (
-    <section className="section band-cream cta-band">
+    <section className="cta-band">
       <div className="container">
         <div className="final-cta">
           <h2>Reconstruct a deal you already closed.</h2>
@@ -10,9 +10,8 @@ export function FinalCta() {
             concluded at the time. Thirty minutes, and nothing live is at risk.
           </p>
           <div className="final-cta-actions">
-            <a href="#book-walkthrough" className="cta-text-link">
+            <a href="#book-walkthrough" className="btn btn-primary">
               Book a walkthrough
-              <span aria-hidden="true"> →</span>
             </a>
             <a href="#contact" className="cta-quiet-link">
               Request sample screens

@@ -62,7 +62,7 @@ export function Nav() {
           ))}
           <a
             href="#book-walkthrough"
-            className="btn btn-primary nav-cta"
+            className="btn btn-primary"
             onClick={() => setOpen(false)}
           >
             Book a walkthrough

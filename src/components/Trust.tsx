@@ -1,18 +1,19 @@
 export function Trust() {
   return (
-    <section id="trust" className="section band-cream proof">
+    <section id="trust" className="section">
       <div className="container">
         <div className="section-head center">
+          <p className="eyebrow">Trust</p>
           <h2>Your deal materials are treated like they&apos;re ours.</h2>
         </div>
 
         <div className="trust-grid">
-          <article>
+          <article className="trust-card">
             <p className="num">01</p>
             <h3>NDA before anything</h3>
             <p>Yours or ours. Nothing is processed until it’s signed.</p>
           </article>
-          <article>
+          <article className="trust-card">
             <p className="num">02</p>
             <h3>No outside human review</h3>
             <p>
@@ -20,7 +21,7 @@ export function Trust() {
               offshore team.
             </p>
           </article>
-          <article>
+          <article className="trust-card">
             <p className="num">03</p>
             <h3>Your edge stays yours</h3>
             <p>
@@ -28,7 +29,7 @@ export function Trust() {
               model training. Provider-side data is deleted within 30 days.
             </p>
           </article>
-          <article>
+          <article className="trust-card">
             <p className="num">04</p>
             <h3>Deleted on request</h3>
             <p>
@@ -46,8 +47,8 @@ export function Trust() {
               AI is the leverage; finance is the judgment; the firm keeps both.
             </p>
           </div>
-          <div className="card-grid two">
-            <article className="panel">
+          <div className="founder-grid">
+            <article className="founder-card">
               <div className="avatar">SP</div>
               <h3>Shaurya Prakaash</h3>
               <p className="role">Co-Founder &amp; CEO</p>
@@ -58,7 +59,7 @@ export function Trust() {
               </p>
               <a href="mailto:sprakaash@verric.io">sprakaash@verric.io</a>
             </article>
-            <article className="panel">
+            <article className="founder-card">
               <div className="avatar">LA</div>
               <h3>Luai Abuizzah</h3>
               <p className="role">Co-Founder &amp; Chief Product Officer</p>

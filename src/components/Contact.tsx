@@ -1,6 +1,6 @@
 export function Contact() {
   return (
-    <section id="contact" className="section band-cream contact">
+    <section id="contact" className="section contact">
       <span id="book-walkthrough" className="anchor" aria-hidden="true" />
       <span id="design-partner" className="anchor" aria-hidden="true" />
       <div className="container contact-layout">
@@ -80,7 +80,7 @@ export function Contact() {
 
           <input type="hidden" name="buyer-type" value="PE firm" />
 
-          <div className="contact-message">
+          <div>
             <label htmlFor="contact-message">Message</label>
             <textarea
               id="contact-message"
@@ -91,7 +91,7 @@ export function Contact() {
             />
           </div>
 
-          <button type="submit" className="btn btn-secondary">
+          <button type="submit" className="btn btn-ghost">
             Send inquiry
           </button>
         </form>
